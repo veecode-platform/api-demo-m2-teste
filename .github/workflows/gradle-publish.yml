@@ -82,7 +82,7 @@ jobs:
               .metadata.namespace="argocd" |
               .spec.project="default" |
               .spec.source.repoURL="https://github.com/veecode-platform/argocd-repository.git" |
-              .spec.source.targetRevision="master" |
+              .spec.source.targetRevision="apr" |
               .spec.source.path="api-demo-m2-teste/" |
               .spec.syncPolicy.automated.prune=true |
               .spec.destination.server="https://kubernetes.default.svc" |
@@ -97,7 +97,7 @@ jobs:
           source_file: 'k8s/'
           destination_repo: veecode-platform/argocd-repository
           destination_folder: '/api-demo-m2-teste/'
-          destination_branch: 'master'
+          destination_branch: 'apr'
           user_email: 'veecode-bot@vee.codes'
           user_name: 'veecode-bot'
           commit_message: 'Moving k8s api-demo-m2-teste artefacts'
@@ -111,7 +111,7 @@ jobs:
           source_file: 'config/'
           destination_repo: veecode-platform/argocd-repository
           destination_folder: '/config/'
-          destination_branch: 'master'
+          destination_branch: 'apr'
           user_email: 'veecode-bot@vee.codes'
           user_name: 'veecode-bot'
           commit_message: 'Configuring api-demo-m2-teste argocd application'
