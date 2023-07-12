@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  api-demo-m2-teste:
+    container_name: api-demo-m2-teste 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"

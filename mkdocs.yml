@@ -1,0 +1,8 @@
+site_name: "api-demo-m2-teste"
+site_description: "api-demo-m2-teste"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
